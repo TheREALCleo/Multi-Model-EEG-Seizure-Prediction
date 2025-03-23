@@ -4,7 +4,7 @@
 Electroencephalography (EEG) is a non-invasive method used to record electrical activity in the brain. The signals are captured via electrodes placed on the scalp, measuring the voltage fluctuations caused by neural activity. EEG signals are widely used in the diagnosis and treatment of neurological conditions, including epilepsy. By decoding these signals, we can gain insights into brain activity and detect abnormalities that may lead to seizures.
 
 ## Dataset Information
-The dataset used in this project is **Preprocessed CHB-MIT Scalp EEG Database**, provided in CSV format.
+The dataset used in this project is **chbmit_preprocessed_data.csv**.
 The dataset can be accessed from the [Preprocessed CHB-MIT Scalp EEG Database](https://ieee-dataport.org/open-access/preprocessed-chb-mit-scalp-eeg-database).
 
 ## About Seizures
