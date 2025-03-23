@@ -3,13 +3,9 @@
 ## Introduction to EEG Signals
 Electroencephalography (EEG) is a non-invasive method used to record electrical activity in the brain. The signals are captured via electrodes placed on the scalp, measuring the voltage fluctuations caused by neural activity. EEG signals are widely used in the diagnosis and treatment of neurological conditions, including epilepsy. By decoding these signals, we can gain insights into brain activity and detect abnormalities that may lead to seizures.
 
-### Characteristics of EEG Signals
-- EEG signals are time-series data representing brain activity over time.
-- They are typically categorized into frequency bands such as delta, theta, alpha, beta, and gamma.
-- EEG data is often noisy and requires preprocessing to remove artifacts caused by muscle activity, eye blinks, or external interference.
-
 ## Dataset Information
-The dataset used in this project consists of **IEEE preprocessed EEG signals**, provided in CSV format. This dataset is a rich source of information, with multiple channels capturing voltage differences between specific electrode pairs. Each row in the dataset represents a time instance, and the data is labeled to indicate the presence or absence of seizures. This labeling makes the dataset particularly suitable for building predictive models. Using preprocessed data saves significant time and ensures consistency by removing noise and artifacts beforehand.
+The dataset used in this project is **Preprocessed CHB-MIT Scalp EEG Database**, provided in CSV format.
+The dataset can be accessed from the [Preprocessed CHB-MIT Scalp EEG Database](https://ieee-dataport.org/open-access/preprocessed-chb-mit-scalp-eeg-database).
 
 ## About Seizures
 A seizure is an abnormal burst of electrical activity in the brain, which can lead to changes in behavior, movements, feelings, or consciousness. Seizures can vary in severity and duration, ranging from brief lapses in awareness to prolonged convulsions. For individuals with epilepsy, predicting seizures can make a world of difference by enabling timely interventions, such as administering medication or moving to a safe environment.
