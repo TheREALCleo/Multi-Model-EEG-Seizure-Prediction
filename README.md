@@ -15,6 +15,7 @@ Epilepsy affects millions of people worldwide, and despite advancements in treat
 ## Feature Extraction
 Feature extraction is a critical step in processing EEG signals, enabling the transformation of raw data into meaningful representations for analysis. In this project, the following features are extracted from each EEG channel:
 
+
 ### Statistical Features
 1. **Mean**: Represents the average amplitude of the EEG signal over a specific time window.
 2. **Standard Deviation (SD)**: Measures the variability or dispersion of the signal amplitudes.
@@ -27,6 +28,15 @@ Feature extraction is a critical step in processing EEG signals, enabling the tr
 9. **Zero Crossings (zcross)**: Counts the number of times the signal crosses zero.
 10. **Energy**: Represents the total power of the signal.
 11. **Root Mean Square (RMS)**: A measure of the signal's magnitude.
+
+### Hjorth Parameters
+12. **Activity**: Represents the variance of the signal, indicating signal power.
+13. **Mobility**: Measures the frequency content of the signal by comparing the variance of the first derivative to the original signal.
+14. **Complexity**: Indicates the structural complexity of the signal by comparing second and first derivative mobilities.
+
+### Temporal Features
+15. **Line Length**: Sum of absolute differences between consecutive points, representing signal variability.
+
 
 ### EEG Channels
 Features are extracted for the following channels:
@@ -77,11 +87,13 @@ To classify and predict seizures, multiple machine learning models are employed.
 
 By comparing these models, we aim to identify the most effective approach for seizure prediction. Each model brings unique strengths, ensuring a thorough exploration of the data and prediction possibilities.
 
-## File Overview
-- **EEG_TimeFeatureExtraction.ipynb**: Responsible for extracting statistical features from raw EEG signals, converting time-series data into meaningful feature sets.
+# File Overview
+- **CSV_analysis.ipynb**: Basic statistical analysis with visualizations.
+- **EEG_TimeFeatureExtraction.ipynb**: Extracts statistical features from EEG signals, converting time-series data into meaningful feature sets.
 - **Preprocessing.ipynb**: Handles data cleaning, normalization, and preparation of the dataset for model training.
-- **Models.ipynb**: Implements various machine learning and deep learning models, including 1D-CNN, LightGBM, and Random Forest.
-- **ModelTesting.ipynb**: Evaluates the performance of the trained models using metrics like accuracy, precision, recall, and F1-score.
+- **ModelComparison.ipynb**: Compares different machine learning models based on evaluation metrics like accuracy, precision, recall, and F1-score.
+- **Models Folder**: Contains various machine learning and deep learning model implementations, including 1D-CNN, Random Forest, KNN etc.
+
 
 ## Conclusion
 This project focuses on leveraging the power of EEG signals and advanced machine learning models to predict seizures. By transforming raw EEG data into meaningful features and employing a diverse set of algorithms, this system aims to provide accurate and timely predictions. The ultimate goal is to contribute to better management of epilepsy, offering individuals a safer and more predictable future.
